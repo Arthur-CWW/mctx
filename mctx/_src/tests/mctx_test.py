@@ -19,18 +19,18 @@ import mctx
 
 
 class MctxTest(absltest.TestCase):
-  """Test mctx can be imported correctly."""
+    """Test mctx can be imported correctly."""
 
-  def test_import(self):
-    self.assertTrue(hasattr(mctx, "gumbel_muzero_policy"))
-    self.assertTrue(hasattr(mctx, "muzero_policy"))
-    self.assertTrue(hasattr(mctx, "qtransform_by_min_max"))
-    self.assertTrue(hasattr(mctx, "qtransform_by_parent_and_siblings"))
-    self.assertTrue(hasattr(mctx, "qtransform_completed_by_mix_value"))
-    self.assertTrue(hasattr(mctx, "PolicyOutput"))
-    self.assertTrue(hasattr(mctx, "RootFnOutput"))
-    self.assertTrue(hasattr(mctx, "RecurrentFnOutput"))
+    def test_import(self):
+        self.assertTrue(hasattr(mctx, "gumbel_muzero_policy"))
+        self.assertTrue(hasattr(mctx, "muzero_policy"))
+        self.assertTrue(hasattr(mctx, "qtransform_by_min_max"))
+        self.assertTrue(hasattr(mctx, "qtransform_by_parent_and_siblings"))
+        self.assertTrue(hasattr(mctx, "qtransform_completed_by_mix_value"))
+        self.assertTrue(hasattr(mctx, "PolicyOutput"))
+        self.assertTrue(hasattr(mctx, "RootFnOutput"))
+        self.assertTrue(hasattr(mctx, "RecurrentFnOutput"))
 
 
 if __name__ == "__main__":
-  absltest.main()
+    absltest.main()

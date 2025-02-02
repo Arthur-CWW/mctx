@@ -1,0 +1,22 @@
+[project]
+name = "mctx"
+version = "0.0.1"
+dependencies = [
+    "chex>=0.0.8",
+    "jax>=0.4.25",
+    "jaxlib>=0.4.25",
+]
+
+[dependency-groups]
+dev = [
+    "absl-py>=0.9.0",
+    "pygraphviz>=1.7",
+]
+test = [
+    "pytest>=7.0.0",
+    "absl-py>=0.9.0",
+    "numpy>=1.18.0",
+]
+
+# [tool.uv]
+# package = false
